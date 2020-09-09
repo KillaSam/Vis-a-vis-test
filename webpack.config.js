@@ -9,8 +9,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, './docs'),
-    publicPath: '/docs'
+    path: path.resolve(__dirname, 'docs'),
+    
   },
   devtool: "source-map",
   module: {
@@ -51,7 +51,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
         template: __dirname + "/src/public/index.html",
-        inject: 'body'
     }),
     new CopyPlugin({
         patterns:[
