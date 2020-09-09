@@ -38,7 +38,7 @@ module.exports = {
           use: [{
             loader: 'file-loader',
             options: {
-                name: '[path][name].[ext]'
+                name: '/styles/img/[name].[ext]'
             }
           }]
 
@@ -56,7 +56,7 @@ module.exports = {
         patterns:[
             {
                 from: 'src/styles/img',
-                to: 'img'
+                to: 'styles/img'
             }
         ]
     })
