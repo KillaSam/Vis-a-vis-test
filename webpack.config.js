@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -23,14 +25,12 @@ module.exports = {
           ]
       },
       {
-        test: /\.(sass|scss)$/,
-        use: [{
-            loader: "style-loader" 
-        }, {
-            loader: "css-loader" 
-        }, {
-            loader: "sass-loader"
-        }]
+        test: /\.scss$/,
+        use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader'
+        ],
       },
       {
           test: /\.svg$/,
@@ -49,6 +49,9 @@ module.exports = {
       overlay: true
   },
   plugins: [
+    new MiniCssExtractPlugin({
+        filename: '[name].css',
+    }),
     new HtmlWebpackPlugin({
         template: __dirname + "/src/public/index.html",
     }),
