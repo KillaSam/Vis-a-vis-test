@@ -361,6 +361,20 @@ main {
                 }
             }
             .icons{
+                .progress-bar{
+                    margin-left: 24px;
+                    position: absolute;
+                    height: 2px;
+                    margin-top: 94px;
+                    width: 50%;
+                    border: 0;
+                }
+                .progress-bar[value]::-webkit-progress-bar {
+                    background-color: #B4B4B4;
+                }
+                .progress-bar[value]::-webkit-progress-value {
+                    background-color: #0093E6;
+                }
                 display: flex;
                 height: 180px;
                 width: 1250px;
@@ -371,6 +385,33 @@ main {
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: flex-start;
+                    .first-icon{
+                        display: flex;
+                        width: 250px;
+                        align-items: center;
+                        justify-content: space-between;
+                        .circle{
+                            width: 20px;
+                            height: 20px;
+                            border: 2px solid #0093E6;
+                            border-radius: 50%;
+                            display: flex;                            
+                            justify-content: center;
+                            align-items: center;                            
+                            .inside-circle{
+                                width: 10px;
+                                height: 10px;
+                                background-color: #0093E6;
+                                border-radius: 50%;
+                            }
+                        }
+                        .line-1{
+                            height: 15px;
+                            background-color: #ffffff;
+                            width: 20px;
+                            z-index: 10000;
+                        }
+                    }
                     p{
                         font-weight: bold;
                         font-size: 20px;
@@ -391,6 +432,26 @@ main {
                         line-height: 100%;
                         color: #4A4D4E;
                     }
+                    .second-icon{
+                        display: flex;
+                        width: 250px;
+                        align-items: center;
+                        justify-content: space-between;
+                        .circle{
+                            z-index: 10000;
+                            background-color: #ffffff;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px solid #B4B4B4;
+                            border-radius: 50%;
+                        }
+                        .line-1{
+                            height: 15px;
+                            background-color: #ffffff;
+                            width: 20px;
+                            z-index: 10000;
+                        }
+                    }
                 }
                 .icon-3{
                     width: 250px;
@@ -405,6 +466,27 @@ main {
                         line-height: 100%;
                         color: #4A4D4E;
                     }
+                    .second-icon{
+                        display: flex;
+                        width: 250px;
+                        align-items: center;
+                        justify-content: space-between;
+                        .circle{
+                            z-index: 10000;
+                            background-color: #ffffff;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px solid #B4B4B4;
+                            border-radius: 50%;
+                        }
+                        .line-1{
+                            height: 15px;
+                            background-color: #ffffff;
+                            width: 20px;
+                            z-index: 10000;
+                        }
+                    }
+                    
                 }
                 .icon-4{
                     width: 250px;
@@ -419,6 +501,26 @@ main {
                         line-height: 100%;
                         color: #4A4D4E;
                     }
+                    .second-icon{
+                        display: flex;
+                        width: 250px;
+                        align-items: center;
+                        justify-content: space-between;
+                        .circle{
+                            z-index: 10000;
+                            background-color: #ffffff;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px solid #B4B4B4;
+                            border-radius: 50%;
+                        }
+                        .line-1{
+                            height: 15px;
+                            background-color: #ffffff;
+                            width: 20px;
+                            z-index: 10000;
+                        }
+                    }
                 }
                 .icon-5{
                     width: 250px;
@@ -432,6 +534,14 @@ main {
                         font-size: 20px;
                         line-height: 100%;
                         color: #4A4D4E;
+                    }
+                    .circle{
+                        z-index: 10000;
+                        background-color: #ffffff;
+                        width: 10px;
+                        height: 10px;
+                        border: 2px solid #B4B4B4;
+                        border-radius: 50%;
                     }
                 }
             }
