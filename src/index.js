@@ -1,5 +1,4 @@
 import './styles/main.scss'
-
 new Vue({
   el: '#vue-form',
   data() {
@@ -112,3 +111,4 @@ const Visible = function () {
 
 document.addEventListener('mousewheel', Visible);
 Visible();
+

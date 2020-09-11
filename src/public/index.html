@@ -184,23 +184,23 @@
             </div>
         </section>
         <section class="super-form">
-            <form method="POST">
+            <div class="form">
                 <div class="main-form">
                     <p class="form-title">Lorem Ipsum is simply dummy text</p>
                     <p class="form-description">It is a long established fact that a reader</p>
                     <div class="inputs">
                         <div class="name" id="first">
                             <input class="forms" id="form-name" name="form-name" type="text" placeholder="Name">
-                            <p><span class="blue">*</span> Lorem Ipsum is simply dummy</p>
+                            <p class="name-sign"><span class="blue">*</span> Lorem Ipsum is simply dummy</p>
                         </div>
                         <br>                        
                         <div class="name">
                             <input class="forms" id="form-phone" name="form-name" type="text" placeholder="Phone *">
-                            <p><span class="blue">*</span> Lorem Ipsum is simply dummy</p>
+                            <p class="phone-sign"><span class="blue">*</span> Lorem Ipsum is simply dummy</p>
                         </div>
                         <div class="name">
                             <input class="forms" id="form-email" name="form-name" type="text" placeholder="E-mail *">                            
-                            <p><span class="blue">*</span> Lorem Ipsum is simply dummy</p>
+                            <p class="email-sign"><span class="blue">*</span> Lorem Ipsum is simply dummy</p>
                         </div>
                     </div>
                     <div class="special-slider">
@@ -213,7 +213,7 @@
                             </div>
                             <p>Lorem Ipsum is simply dummy test</p>
                         </div>
-                        <button class="button-header">Lorem Ipsum</button>
+                        <button id="main-btn" class="button-header">Lorem Ipsum</button>
                     </div>
                 </div>
                 <aside class="contacts">
@@ -227,7 +227,7 @@
                         to repeat predefined chunks as necessary, making this the first true generator on the 
                         Internet.</p>
                 </aside>
-            </form>
+            </div>
         </section>
     </main>
     <footer class="my-footer">
@@ -261,8 +261,8 @@
             </ul>
         </div>
     </footer>
-    <script defer src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-    <script defer src="./src/index.js"></script>
+    <script async src="./src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </body>
 </html>
 

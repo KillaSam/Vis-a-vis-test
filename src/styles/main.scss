@@ -637,7 +637,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        form{
+        .form{
             display: flex;
             justify-content: space-between;
             width: 1270px;
@@ -683,7 +683,15 @@ main {
                         #form-name{
                             width: 100%;
                         }        
-                         
+                        .name-sign{
+                            display: none;
+                        } 
+                        .phone-sign{
+                            display: none;
+                        } 
+                        .email-sign{
+                            display: none;
+                        } 
                     }
                 }
                 .special-slider{
@@ -805,11 +813,4 @@ main {
     border: 0;
     font-size: 18px;
     color: #ffffff;
-}
-
-
-#ha{
-    height: 20px;
-    width: 20px;
-    background-color: black;
 }
