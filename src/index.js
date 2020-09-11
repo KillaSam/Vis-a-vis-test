@@ -75,6 +75,17 @@ new Vue({
   }
 })
 
+new Vue({
+  el: '#special-slide',
+  vuetify: new Vuetify(),
+  data() {
+    return {
+      slider: '4',
+      ticksLabels: ['','500грн', '1500грн', '2500грн','3500грн', '4500грн', '5500грн', '6500грн']
+    }
+  }
+})
+
 Vue.component('Item', {
   props: {
     curr_data: {

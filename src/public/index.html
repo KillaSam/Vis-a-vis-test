@@ -5,6 +5,7 @@
     <link href="app.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -203,8 +204,22 @@
                             <p class="email-sign"><span class="blue">*</span> Lorem Ipsum is simply dummy</p>
                         </div>
                     </div>
-                    <div class="special-slider">
-
+                    <div id="special-slide" class="special-slider">
+                        <v-card-text>
+                            <v-slider
+                              :max="8"
+                              :tick-labels="ticksLabels"
+                              step="1"
+                              ticks="always"
+                              :label="tick"
+                              tick-size="8"
+                              v-model="slider"
+                            >
+                            <template v-slot:thumb-label="{ value }">
+                                {{ ticksLabels[Math.min(Math.floor(value / 10), 9)] }}
+                              </template>
+                        </v-slider>
+                          </v-card-text>
                     </div>
                     <div class="form-bottom">
                         <div class="text">
@@ -263,6 +278,7 @@
     </footer>
     <script async src="./src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 </body>
 </html>
 
