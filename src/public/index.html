@@ -175,8 +175,14 @@
                 </div>
             </div>
         </section>
-        <section class="vue-staff">
-
+        <section id="vue-form" class="vue-staff">
+            <div class="vue-hi">
+                <img src="./styles/img/special-elipse.svg" class="inf-circle">
+                <Item v-for="(list, i) in loremFinalList"
+                    :key="i"
+                    :curr_data="list"
+                    />
+            </div>
         </section>
         <section class="super-form">
             <form method="POST">

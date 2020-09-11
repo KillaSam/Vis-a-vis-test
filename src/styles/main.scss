@@ -564,8 +564,73 @@ main {
         }
     }
     .vue-staff{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 1340px;
         background-color: #F9F9F9;
+        .vue-hi{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 1400px;
+            height: 930px;
+            .inf-circle{
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                margin-bottom: 765px;     
+                background-color: #F9F9F9;       
+                animation: 1s linear 0s rotate;
+                animation-iteration-count: infinite;
+                @keyframes rotate {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                } 
+            }
+            .item{
+                width: 360px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-right: 100px;
+                .circle{
+                    width: 100px;
+                    height: 100px;
+                    background-color: #C4C4C4;
+                    border-radius: 50%;
+                }
+                .title{
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 120%;
+                    color: #4A4D4E;
+                }
+                .description{
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: #4A4D4E;
+                }
+                ul{
+                    li{
+                        color: #0093E6;
+                        font-size: 20px;                        
+                        span{
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 160%;
+                            color: #4A4D4E;
+                        }
+                    }
+                }
+            }
+        }
     }
     .super-form{
         height: 1110px;
@@ -740,4 +805,11 @@ main {
     border: 0;
     font-size: 18px;
     color: #ffffff;
+}
+
+
+#ha{
+    height: 20px;
+    width: 20px;
+    background-color: black;
 }
