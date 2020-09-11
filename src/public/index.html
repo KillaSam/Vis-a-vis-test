@@ -224,18 +224,18 @@
                         <v-card-text>
                             <v-slider
                               :max="8"
+                              :min="0"
                               :tick-labels="ticksLabels"
                               step="1"
-                              ticks="always"
-                              :label="tick"
+                              ticks
                               tick-size="8"
                               v-model="slider"
-                            >
-                            <template v-slot:thumb-label="{ value }">
-                                {{ ticksLabels[Math.min(Math.floor(value / 10), 9)] }}
-                              </template>
-                        </v-slider>
-                          </v-card-text>
+                            >                            
+                            </v-slider>
+                            <div id="choosen">
+                                <p>{{ (slider == 0) ? slider+'грн' : slider*1000-500+'грн' }}</p>
+                            </div>
+                        </v-card-text>
                     </div>
                     <div class="form-bottom">
                         <div class="text">
