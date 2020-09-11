@@ -112,3 +112,20 @@ const Visible = function () {
 document.addEventListener('mousewheel', Visible);
 Visible();
 
+
+const name = document.querySelector('#form-name');
+const phone = document.querySelector('#form-phone');
+const email = document.querySelector('#form-email');
+
+document.getElementById('main-btn').onclick = () => {
+  if(name.value === '' || phone.value === '' || email.value === ''){
+    if(name.value === '') document.querySelector('.name-sign').style.display = 'inline';
+    if(phone.value === '') document.querySelector('.phone-sign').style.display = 'inline';
+    if(email.value === '') document.querySelector('.email-sign').style.display = 'inline';
+  } else {
+    fetch('/form-sending', {method: 'POST'})
+      .then(r => r.json())
+      .catch(err => alert(err));
+    
+  }
+}
