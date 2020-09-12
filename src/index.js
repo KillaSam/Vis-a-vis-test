@@ -123,7 +123,6 @@ const Visible = function () {
 document.addEventListener('mousewheel', Visible);
 Visible();
 
-
 const name = document.querySelector('#form-name');
 const phone = document.querySelector('#form-phone');
 const email = document.querySelector('#form-email');
@@ -138,5 +137,24 @@ document.getElementById('main-btn').onclick = () => {
       .then(r => r.json())
       .catch(err => alert(err));
     
+  }
+}
+
+name.onkeyup = () => {
+  document.querySelector('.blue-star1').style.display = 'none';
+  if(name.value === ''){
+    document.querySelector('.blue-star1').style.display = 'inline';
+  }
+}
+phone.onkeyup = () => {
+  document.querySelector('.blue-star2').style.display = 'none';
+  if(phone.value === ''){
+    document.querySelector('.blue-star2').style.display = 'inline';
+  }
+}
+email.onkeyup = () => {
+  document.querySelector('.blue-star3').style.display = 'none';
+  if(email.value === ''){
+    document.querySelector('.blue-star3').style.display = 'inline';
   }
 }
